@@ -1,0 +1,143 @@
+<!--A basic checkout form-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <title>Basic checkout example using HTML&CSS</title>
+</head>
+
+<body>
+
+<div class="container">
+    <h2 class="text-sm-mid mb-5">Checkout form</h2>
+    <div class="wrap">
+        <div class="cart">
+            <h4>
+                <span>Your cart: </span>
+                <span>3 items</span>
+            </h4>
+            <ul>
+                <li class="cart-item">
+                    <div class="product-item">
+                        <h6>Product name</h6>
+                        <small>Brief description</small>
+                    </div>
+                    <span>$12</span>
+                    <div class="clearfix"></div>
+                </li>
+                <li class="cart-item">
+                    <div class="product-item">
+                        <h6>Second product</h6>
+                        <small>Brief description</small>
+                    </div>
+                    <span>$8</span>
+                    <div class="clearfix"></div>
+                </li>
+                <li class="cart-item">
+                    <div class="product-item">
+                        <h6>Third item</h6>
+                        <small>Brief description</small>
+                    </div>
+                    <span>$5</span>
+                    <div class="clearfix"></div>
+                </li>
+                <li class="cart-sum">
+                    <span>Total (AUD):</span>
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;$20</strong>
+                </li>
+            </ul>
+        </div>
+        <div class="checkout-form">
+            <h4>Billing address</h4>
+            <form>
+                <div class="form-row">
+                    <div class="firstname-box">
+                        <label for="firstName">First name</label>
+                        <input type="text" id="firstName" placeholder="" value="" required>
+                    </div>
+                    <div class="lastname-box">
+                        <label for="lastName">Last name</label>
+                        <input type="text" id="lastName" placeholder="" value="" required>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="address">Address</label>
+                    <input type="text" id="address" placeholder="1234 Main St" required>
+                </div>
+
+                <div>
+                    <div class="country-box">
+                        <label for="country">Country</label>
+                        <select class="custom-select d-block w-100" id="country" required>
+                            <option value="">Choose...</option>
+                            <option>Australia</option>
+                        </select>
+                    </div>
+                    <div class="state-box">
+                        <label for="state">State</label>
+                        <select class="custom-select d-block w-100" id="state" required>
+                            <option value="">Choose...</option>
+                            <option>California</option>
+                        </select>
+                    </div>
+                    <div class="zip-box">
+                        <label for="zip">Zip</label>
+                        <input type="text" id="zip" placeholder="" required>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <input type="checkbox" id="same-address">
+                    <label for="same-address">Shipping address is the same as my billing address</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="save-info">
+                    <label for="save-info">Save this information for next time</label>
+                </div>
+                <hr>
+
+                <h4>Payment</h4>
+
+                <div>
+                    <div >
+                        <input id="credit" name="paymentMethod" type="radio" checked required>
+                        <label for="credit">Credit card</label>
+                    </div>
+                    <div>
+                        <input id="debit" name="paymentMethod" type="radio" required>
+                        <label for="debit">Debit card</label>
+                    </div>
+                    <div>
+                        <input id="paypal" name="paymentMethod" type="radio" required>
+                        <label for="paypal">Paypal</label>
+                    </div>
+                </div>
+                <hr>
+
+                <button class="btn btn-primary" type="submit">Checkout</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2017-2018 Company Name</p>
+        <ul>
+            <li class="list-inline"><a href="#">Privacy</a></li>
+            <li class="list-inline"><a href="#">Terms</a></li>
+            <li class="list-inline"><a href="#">Support</a></li>
+        </ul>
+    </footer>
+</div>
+
+<!-- ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+</body>
+</html>

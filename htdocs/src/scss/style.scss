@@ -1,0 +1,78 @@
+$bg-color:#333;
+$font-color:#fff;
+$primary-color:#008ed6;
+$dark-overlay: rgba(0,0,0,0.7);
+$font-size:30px;
+body{
+  background: $bg-color;
+  color: $font-color;
+
+}
+
+.navbar{
+  background-color: white;
+
+  opacity: 0.6;
+  min-height: 100px;
+
+
+}
+
+
+
+#home-section{
+  background-image: url('../img/home.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 900px;
+
+  .dark-overlay{
+    background-color: $dark-overlay;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    min-height: 900px;
+    opacity: 0.8;
+
+  }
+  .home-inner{
+    padding-top:150px;
+  }
+
+  .card-form{
+    opacity: 0.8;
+  }
+
+  .fa{
+    color:$primary-color;
+    background: #fff;
+    padding: 4px;
+    border-radius: 5px;
+    font-size:$font-size;
+  }
+
+}
+
+#Game-head-section, #review-section{
+  .fa{
+    color:#fff;
+    background: #333;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: $font-size;
+
+  }
+}
+
+#create-section{
+  .fa{
+    color:$primary-color;
+    background: #fff;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: $font-size;
+
+  }
+
+}

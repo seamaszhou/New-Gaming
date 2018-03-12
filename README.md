@@ -1,3 +1,3 @@
 # New-Gaming
-Game website project for INFS3202
-Test
+
+Video Game and entertainment media Website

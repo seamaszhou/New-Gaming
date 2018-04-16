@@ -21,21 +21,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md navigation-clean">
-        <div class="container"><a class="navbar-brand" href="#">VGR-PRO</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse"
-                id="navcol-1">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="Game.html">Games&nbsp;</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="Game.html">Games</a><a class="dropdown-item" role="presentation" href="news.html">News</a><a class="dropdown-item" role="presentation" href="#"></a></div>
-                    </li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="collection.html">Collection</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#"><i class="fa fa-user"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<?php include 'php_files/nav.php'; ?>
     <div class="login-card">
         <div>
             <h2 class="text-center">Escola Oficina</h2>

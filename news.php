@@ -2,7 +2,7 @@
 <html>
 
 
-<?php include 'php_files/nav.php'; ?>
+<?php include 'php_files/head.php'; ?>
 
 
 <body>

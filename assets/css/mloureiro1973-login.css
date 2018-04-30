@@ -24,19 +24,6 @@
   min-height:1em;
 }
 
-.login-card .reauth-email {
-  display:block;
-  color:#404040;
-  line-height:2;
-  margin-bottom:10px;
-  font-size:14px;
-  text-align:center;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  white-space:nowrap;
-  box-sizing:border-box;
-}
-
 .login-card .form-signin input[type=email], .login-card .form-signin input[type=password], .login-card .form-signin input[type=text], .login-card .form-signin button {
   height:44px;
   font-size:16px;
@@ -46,10 +33,6 @@
   z-index:1;
   position:relative;
   box-sizing:border-box;
-}
-
-.login-card label {
-  color:#000000;
 }
 
 .login-card .form-signin .form-control:focus {

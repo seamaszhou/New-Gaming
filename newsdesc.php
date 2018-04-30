@@ -1,9 +1,11 @@
 <html>
-<head>
-</head>
 
+<?php include 'php_files/head.php'; ?>
 
 <body>
+    <div>
+	<?php include 'php_files/nav.php'; ?>
+    </div>
 <?php
 
 $user = "root";
@@ -17,14 +19,10 @@ if ($database->connect_errno) {
 }
 
 
-$sql = "SELECT NewsID, NewsTitle, NewsDesc FROM news_desc WHERE NewsID = 4";
+$sql = "SELECT NewsID, NewsTitle, NewsDesc FROM news_desc WHERE NewsID = 2";
 $result = $database->query($sql);
 
-if($result -> num_rows > 0){
-	while($row = $result -> fetch_assoc()){
-		echo $row["NewsTitle"]. "<br>" . $row["NewsDesc"];
-	}
-}
+
 
 
 if ($database->connect_errno) {
@@ -33,6 +31,14 @@ if ($database->connect_errno) {
 
 $database -> close();
 ?>
+
+<?php if($result -> num_rows > 0){
+	while($row = $result -> fetch_assoc()){
+		echo $row["NewsTitle"]. "<br>" . $row["NewsDesc"];
+	}
+} ?>
+
+
 </body>
 
 </html>

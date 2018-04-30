@@ -53,8 +53,8 @@
 
 						<div class="login-card">
 							<div>
-					<h2 class="text-center">User name</h2>
-						</div><img class="img-fluid profile-img-card" src="assets/img/avatar_2x.png">
+
+						</div>
 							<form action="" method="post">
 								<div class="form-group has-feedback">
 									<input type="email" class="form-control inputEmail" name="email" placeholder="Email" data-error="That email address is invalid" required="" value="">

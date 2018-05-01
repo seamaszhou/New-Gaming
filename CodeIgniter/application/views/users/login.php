@@ -57,6 +57,7 @@
 						</div>
 							<form action="" method="post">
 								<div class="form-group has-feedback">
+                  <img class="img-fluid profile-img-card" src="../../assets/img/login-avatar.png">
 									<input type="email" class="form-control inputEmail" name="email" placeholder="Email" data-error="That email address is invalid" required="" value="">
 									<?php echo form_error('email','<span class="help-block">','</span>'); ?>
 								</div>

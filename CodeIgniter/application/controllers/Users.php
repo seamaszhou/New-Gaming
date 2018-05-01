@@ -47,6 +47,7 @@ class Users extends CI_Controller {
                     'password' => md5($this->input->post('password')),
                     'status' => '1'
                 );
+
                 $checkLogin = $this->user->getRows($con);
                 if($checkLogin){
                     $this->session->set_userdata('isUserLoggedIn',TRUE);
@@ -67,7 +68,7 @@ class Users extends CI_Controller {
     public function registration(){
         $data = array();
         $userData = array();
-      
+
         if($this->input->post('regisSubmit')){
             $this->form_validation->set_rules('name', 'Name', 'required');
             $this->form_validation->set_rules('email', 'Email', 'required|valid_email|callback_email_check');

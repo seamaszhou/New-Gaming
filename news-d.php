@@ -7,30 +7,19 @@
     <div>
 	<?php include 'php_files/nav.php'; ?>
     </div>
+    <?php include 'db_fns.php'; ?>
 <?php
-
-$user = "root";
-$pass = "";
-$database = "news";
-
-$database = new mysqli("localhost", $user, $pass, $database) or die ("Unable to connect");
-
-if ($database->connect_errno) {
-    echo "Failed to connect to MySQL: (" . $database->connect_errno . ") " . $database->connect_error;
-}
+include_once('db_fns.php');
+$handle = db_connect();
 
 
 $sql = "SELECT NewsID, NewsTitle, NewsDesc FROM news_desc WHERE NewsID = 2";
-$result = $database->query($sql);
+$result = $handle->query($sql);
 
 
 
 
-if ($database->connect_errno) {
-    echo "Failed to connect to MySQL: (" . $database->connect_errno . ") " . $database->connect_error;
-}
 
-$database -> close();
 ?>
 
     </div><small class="mt-auto" style="margin-top:200px;"></small>
@@ -42,7 +31,7 @@ $database -> close();
 
      ?>
   </h1>
-  
+
     <p class="lead text-left mx-auto" style="width:500px;">
 
 
@@ -53,6 +42,10 @@ $database -> close();
         ex non sem vehicula venenatis ut sed purus. Nunc eget fermentum metus, non consectetur velit. Donec semper leo a tellus posuere mollis. Duis a eleifend metus. Sed viverra enim sit amet mattis viverra. Ut euismod viverra lectus id aliquam. Cras
         eget odio mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ipsum nulla, vestibulum id diam eu, malesuada malesuada ex. Vestibulum et volutpat mauris. Donec sagittis sem vitae lacinia pellentesque.
         Ut mattis viverra aliquam.</p>
+
+        <?php include 'comment.php' ?>
+
+        
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/-Filterable-Cards-.js"></script>

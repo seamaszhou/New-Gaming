@@ -48,25 +48,7 @@
             </div>
         </div>
     </div>
-    <div style="background-size:contain;background-repeat:no-repeat;height:550px;">
-        <h1 class="text-center" style="font-weight:bold;">Reviews</h1>
-        <div class="card-group" style="padding:0;padding-top:30px;padding-right:300px;padding-left:300px;">
-            <div class="card"><img class="card-img-top w-100 d-block">
-                <div class="card-body">
-                    <h4 class="card-title">Title</h4>
-                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Button</button></div>
-            </div>
-            <div class="card"><img class="card-img-top w-100 d-block">
-                <div class="card-body">
-                    <h4 class="card-title">Title</h4>
-                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Button</button></div>
-            </div>
-            <div class="card"><img class="card-img-top w-100 d-block">
-                <div class="card-body">
-                    <h4 class="card-title">Title</h4>
-                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Button</button></div>
-            </div>
-        </div>
+
     </div>
     <div class="footer-dark">
         <footer>

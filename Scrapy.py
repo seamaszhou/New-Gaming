@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from urllib.request import Request, urlopen
 
 
-site= "https://www.gamespot.com/"
+site= "http://ku.gamersky.com/release/ps4_201805/"
 hdr = {'User-Agent': 'Mozilla/5.0'}
 req = Request(site,headers=hdr)
 page = urlopen(req)
@@ -14,7 +14,7 @@ i=1
 for img in soup.findAll('img'):
 	temp=img.get('src')
 	if temp[:1]=="/":
-		image = "https://www.gamespot.com/ "+ temp
+		image = "http://ku.gamersky.com/release/ps4_201805/ "+ temp
 	else:
 		image = temp
 	

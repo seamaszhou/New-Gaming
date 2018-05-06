@@ -58,7 +58,7 @@
                    <a href="<?php echo$row["image"] ?>">
                  <img src="<?php echo$row["image"] ?>" /></a></div>
                 <?php } ?>
-              
+
           <!--  <div class="col-6 col-sm-4 col-md-3 filtr-item" data-category="1"><a href="https://source.unsplash.com/eWFdaPRFjwE/1200x1200.jpg">
               <img class="img-fluid" src="https://source.unsplash.com/eWFdaPRFjwE/600x600.jpg" alt="image"></a></div>
             <div class="col-6 col-sm-4 col-md-3 filtr-item" data-category="1"><a href="https://source.unsplash.com/gF7hhMIC3vo/1200x900.jpg"><img class="img-fluid" src="https://source.unsplash.com/gF7hhMIC3vo/600x450.jpg" alt="image"></a></div>
@@ -72,6 +72,8 @@
         </div>
         </div>
     </section>
+
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/-Filterable-Cards-.js"></script>

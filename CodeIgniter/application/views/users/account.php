@@ -34,36 +34,100 @@
 					</div>
 			</div>
 	 </nav>
-<div class="container">
-    <!-- validation -->
-	<div class="grids">
-		<div class="progressbar-heading grids-heading">
-			<h2>User Account</h2>
-		</div>
 
-		<div class="forms-grids">
-			<div class="forms3">
-			<div class="w3agile-validation w3ls-validation">
-				<div class="panel panel-widget agile-validation register-form">
-					<div class="validation-grids widget-shadow" data-example-id="basic-forms">
-						<a href="<?php echo base_url(); ?>users/logout" class="logoutBtn">Logout</a>
-						<div class="input-info">
-							<h3>Welcome <?php echo $user['name']; ?>!</h3>
-						</div>
-						<div class="account-info">
-							<p><b>Name: </b><?php echo $user['name']; ?></p>
-							<p><b>Email: </b><?php echo $user['email']; ?></p>
-							<p><b>Phone: </b><?php echo $user['phone']; ?></p>
-							<p><b>Gender: </b><?php echo $user['gender']; ?></p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="clear"> </div>
-			</div>
-		</div>
-	</div>
-	<!-- //validation -->
+
+
+
+
+<div class="container">
+    <div class="row m-y-2">
+        <div class="col-lg-8 push-lg-4">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a href="" data-target="#profile" data-toggle="tab" class="nav-link active">Profile</a>
+                </li>
+
+            </ul>
+            <div class="tab-content p-b-3">
+                <div class="tab-pane active" id="profile">
+                    <h4 class="m-y-2">User Name : <?php echo $user['name']; ?></h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>Email address</h6>
+                            <p>
+                                <?php echo $user['email']; ?>
+                            </p>
+                            <h6>Hobbies</h6>
+                            <p>
+                                Indie music, skiing and hiking. I love the great outdoors.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Recent Tags</h6>
+                            <a href="" class="tag tag-default tag-pill">html5</a>
+                            <a href="" class="tag tag-default tag-pill">react</a>
+                            <a href="" class="tag tag-default tag-pill">codeply</a>
+                            <a href="" class="tag tag-default tag-pill">angularjs</a>
+                            <a href="" class="tag tag-default tag-pill">css3</a>
+                            <a href="" class="tag tag-default tag-pill">jquery</a>
+                            <a href="" class="tag tag-default tag-pill">bootstrap</a>
+                            <a href="" class="tag tag-default tag-pill">responsive-design</a>
+                            <hr>
+                            <span class="tag tag-primary"><i class="fa fa-user"></i> 900 Followers</span>
+                            <span class="tag tag-success"><i class="fa fa-cog"></i> 43 Forks</span>
+                            <span class="tag tag-danger"><i class="fa fa-eye"></i> 245 Views</span>
+                        </div>
+                        <div class="col-md-12">
+                            <h4 class="m-t-2"><span class="fa fa-clock-o ion-clock pull-xs-right"></span> Recent Activity</h4>
+                            <table class="table table-hover table-striped">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <strong>Abby</strong> joined ACME Project Team in <strong>`Collaboration`</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Gary</strong> deleted My Board1 in <strong>`Discussions`</strong>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Kensington</strong> deleted MyBoard3 in <strong>`Discussions`</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>John</strong> deleted My Board1 in <strong>`Discussions`</strong>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Skell</strong> deleted his post Look at Why this is.. in <strong>`Discussions`</strong>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!--/row-->
+                </div>
+
+
+            </div>
+        </div>
+        <div class="col-lg-4 pull-lg-8 text-xs-center">
+            <img src="//placehold.it/150" class="m-x-auto img-fluid img-circle" alt="avatar">
+            <h6 class="m-t-2">Upload a different photo</h6>
+            <label class="custom-file">
+                <input type="file" id="file" class="custom-file-input">
+                <span class="custom-file-control">Choose file</span>
+            </label>
+        </div>
+    </div>
 </div>
+<hr>
 </body>
 </html>

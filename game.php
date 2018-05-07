@@ -9,14 +9,14 @@
 
 
     <section id="filtr-gallery">
-        <div class="container">
-            <h1 class="text-center">MY GALLERY</h1>
+        <div class="container mt-5" >
+            <h1 class="text-center" >MY GALLERY</h1>
             <div class="filtr-controls"><span class="active" data-filter="all">all </span><span data-filter="1">ps4</span><span data-filter="2">XBOXONE</span><span data-filter="3">Switch</span><span data-filter="4">PC</span></div>
             <div class="row filtr-container">
 
               <?php
               session_start();
-              
+
               $handle = db_connect();
               if (mysqli_connect_errno($handle))
               {
@@ -78,7 +78,7 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/-Filterable-Cards-.js"></script>
     <script src="assets/js/Filterable-Gallery-with-Lightbox.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
 </body>
 
 </html>

@@ -6,10 +6,10 @@
 
 
 <body>
+<?php include 'php_files/nav.php'; ?>
+    <div class="mt-5">
 
-    <div>
-	<?php include 'php_files/nav.php'; ?>
-  <?php include 'php_files/db_fns.php'; 
+  <?php include 'php_files/db_fns.php';
   $handle = db_connect();?>
     </div>
 	<figure class="snip1527">

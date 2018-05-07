@@ -8,13 +8,13 @@
 	<?php include 'php_files/nav.php'; ?>
   <?php include 'php_files/db_fns.php'; ?>
     </div>
-    <div style="background-image:url(&quot;assets/img/firewatch-sd-2560x1080.jpg&quot;);background-size:cover;background-repeat:no-repeat;height:851px;"><h1 class="text-center" style="color:#ffffff;font-size:60px;padding-top:15%;">VGR-PRO</h1><h1 class="text-center" style="color:#ffffff;font-size:20px;">Find the newest game news and reviews!</h1></div>
+    <div style="background-image:url(&quot;assets/img/firewatch-sd-2560x1080.jpg&quot;);background-size:cover;background-repeat:no-repeat;height:851px;" class="mt-5"><h1 class="text-center" style="color:#ffffff;font-size:60px;padding-top:15%;">VGR-PRO</h1><h1 class="text-center" style="color:#ffffff;font-size:20px;">Find the newest game news and reviews!</h1></div>
     <div style="background-size:contain;background-repeat:no-repeat;height:750px;">
         <h1 class="text-center" style="font-weight:bold;padding-top:100px;">New Games</h1>
         <div class="card-group" style="padding:0;padding-top:30px;padding-right:300px;padding-left:300px;">
           <?php
           session_start();
-        
+
           $handle = db_connect();
           if (mysqli_connect_errno($handle))
           {

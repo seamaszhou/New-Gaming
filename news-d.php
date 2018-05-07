@@ -9,7 +9,7 @@
     </div>
     <?php include 'db_fns.php'; ?>
 <?php
-include_once('db_fns.php');
+
 $handle = db_connect();
 
 
@@ -45,7 +45,7 @@ $result = $handle->query($sql);
 
         <?php include 'comment.php' ?>
 
-        
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/-Filterable-Cards-.js"></script>

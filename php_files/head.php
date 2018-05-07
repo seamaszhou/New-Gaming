@@ -15,4 +15,6 @@
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/News-Cards.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/dh-row-titile-text-image-right-1.css">
+    <link rel="stylesheet" href="assets/css/Video-Parallax-Background.css">
 </head>

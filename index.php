@@ -6,6 +6,7 @@
 <body>
     <div>
 	<?php include 'php_files/nav.php'; ?>
+  <?php include 'php_files/db_fns.php'; ?>
     </div>
     <div style="background-image:url(&quot;assets/img/firewatch-sd-2560x1080.jpg&quot;);background-size:cover;background-repeat:no-repeat;height:851px;"><h1 class="text-center" style="color:#ffffff;font-size:60px;padding-top:15%;">VGR-PRO</h1><h1 class="text-center" style="color:#ffffff;font-size:20px;">Find the newest game news and reviews!</h1></div>
     <div style="background-size:contain;background-repeat:no-repeat;height:750px;">
@@ -13,7 +14,7 @@
         <div class="card-group" style="padding:0;padding-top:30px;padding-right:300px;padding-left:300px;">
           <?php
           session_start();
-          include_once('db_fns.php');
+        
           $handle = db_connect();
           if (mysqli_connect_errno($handle))
           {
@@ -28,7 +29,7 @@
             <div class="card border-light"><img class="card-img-top mx-auto w-50 d-block" src="<?php echo$row["image"] ?>"/><?php } ?>
                 <div class="card-body">
                     <h4 class="card-title">Title</h4>
-                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Button</button></div>
+                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-info" type="button">Check More</button></div>
             </div>
 
             <?php
@@ -42,7 +43,7 @@
             <div class="card border-light "><img class="card-img-top mx-auto w-50 d-block" src="<?php echo$row["image"] ?>"/><?php } ?>
                 <div class="card-body">
                     <h4 class="card-title">Title</h4>
-                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Button</button></div>
+                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-info" type="button">Check More</button></div>
             </div>
 
             <?php
@@ -56,28 +57,54 @@
             <div class="card border-light"><img class="card-img-top mx-auto w-50 d-block" src="<?php echo$row["image"] ?>"/><?php } ?>
                 <div class="card-body">
                     <h4 class="card-title">Title</h4>
-                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Button</button></div>
+                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-info" type="button">Check More</button></div>
             </div>
         </div>
     </div>
+
+    <?php $sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary FROM news_desc WHERE NewsID = 1";
+    $result = $handle->query($sql); ?>
+
+
 
     <div style="background-size:contain;background-repeat:no-repeat;height:550px;">
         <h1 class="text-center" style="font-weight:bold;">News</h1>
         <div class="card-group" style="padding:0;padding-top:30px;padding-right:300px;padding-left:300px;">
             <div class="card"><img class="card-img-top w-100 d-block">
                 <div class="card-body">
-                    <h4 class="card-title">Title</h4>
-                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Button</button></div>
+                    <h4 class="card-title"><?php if($result -> num_rows > 0){
+                  	while($row = $result -> fetch_assoc()){
+                  		echo $row["NewsTitle"];
+
+                   ?></h4>
+                    <p class="card-text"><?php echo $row["Summary"];
+                  }} ?></p><button class="btn btn-info" type="button">Check More</button></div>
             </div>
+
+            <?php $sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary FROM news_desc WHERE NewsID = 2";
+            $result = $handle->query($sql); ?>
             <div class="card"><img class="card-img-top w-100 d-block">
                 <div class="card-body">
-                    <h4 class="card-title">Title</h4>
-                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Button</button></div>
+                    <h4 class="card-title"><?php if($result -> num_rows > 0){
+                  	while($row = $result -> fetch_assoc()){
+                  		echo $row["NewsTitle"];
+
+                   ?></h4>
+                    <p class="card-text"><?php echo $row["Summary"];
+                  }} ?></p><button class="btn btn-info" type="button">Check More</button></div>
             </div>
+
+            <?php $sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary FROM news_desc WHERE NewsID = 3";
+            $result = $handle->query($sql); ?>
             <div class="card"><img class="card-img-top w-100 d-block">
                 <div class="card-body">
-                    <h4 class="card-title">Title</h4>
-                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Button</button></div>
+                    <h4 class="card-title"><?php if($result -> num_rows > 0){
+                  	while($row = $result -> fetch_assoc()){
+                  		echo $row["NewsTitle"];
+
+                   ?></h4>
+                    <p class="card-text"><?php echo $row["Summary"];
+                  }} ?></p><button class="btn btn-info" type="button">Check More</button></div>
             </div>
         </div>
     </div>

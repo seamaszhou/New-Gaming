@@ -5,7 +5,7 @@
 
 <body>
 <?php include 'php_files/nav.php'; ?>
-
+<?php include 'php_files/db_fns.php'; ?>
 
 
     <section id="filtr-gallery">
@@ -16,14 +16,14 @@
 
               <?php
               session_start();
-              include_once('db_fns.php');
+              
               $handle = db_connect();
               if (mysqli_connect_errno($handle))
               {
                   echo "fail connect DB " . mysqli_connect_error();
               }
               $res= mysqli_query($handle,"SELECT * FROM stories where id in (1,2)");
-              echo "<table>";
+
               while ($row = mysqli_fetch_array($res)) {
 
 

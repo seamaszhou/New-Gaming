@@ -29,7 +29,7 @@
 
                ?>
                 <div class="col-6 col-sm-4 col-md-3 filtr-item" data-category="1">
-                  <a href="<?php echo$row["image"] ?>">
+                  <a href="game-detail.php">
                 <img src="<?php echo$row["image"] ?>" /></a></div>
                 <?php } ?>
 

@@ -7,7 +7,7 @@
     <div>
 	<?php include 'php_files/nav.php'; ?>
     </div>
-    <?php include 'db_fns.php'; ?>
+    <?php include 'php_files/db_fns.php'; ?>
 <?php
 
 $handle = db_connect();

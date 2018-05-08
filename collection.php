@@ -9,7 +9,7 @@
     <div>
 	<?php include 'php_files/nav.php'; ?>
     </div>
-    <section class="py-5">
+    <section class="py-5 mt-5">
         <div class="container">
             <h1 class="text-center mb-4">FILTERABLE CARDS</h1>
             <div class="filtr-controls text-center lead text-uppercase mb-3"><span class="active d-inline-block mx-3 py-1 position-relative" data-filter="all">all </span><span class="d-inline-block mx-3 py-1 position-relative" data-filter="1">category 1 </span><span class="d-inline-block mx-3 py-1 position-relative"

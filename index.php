@@ -8,13 +8,13 @@
 	<?php include 'php_files/nav.php'; ?>
   <?php include 'php_files/db_fns.php'; ?>
     </div>
-    <div style="background-image:url(&quot;assets/img/firewatch-sd-2560x1080.jpg&quot;);background-size:cover;background-repeat:no-repeat;height:851px;"><h1 class="text-center" style="color:#ffffff;font-size:60px;padding-top:15%;">VGR-PRO</h1><h1 class="text-center" style="color:#ffffff;font-size:20px;">Find the newest game news and reviews!</h1></div>
+    <div style="background-image:url(&quot;assets/img/firewatch-sd-2560x1080.jpg&quot;);background-size:cover;background-repeat:no-repeat;height:851px;" class="mt-5"><h1 class="text-center" style="color:#ffffff;font-size:60px;padding-top:15%;">VGR-PRO</h1><h1 class="text-center" style="color:#ffffff;font-size:20px;">Find the newest game news and reviews!</h1></div>
     <div style="background-size:contain;background-repeat:no-repeat;height:750px;">
         <h1 class="text-center" style="font-weight:bold;padding-top:100px;">New Games</h1>
         <div class="card-group" style="padding:0;padding-top:30px;padding-right:300px;padding-left:300px;">
           <?php
           session_start();
-        
+
           $handle = db_connect();
           if (mysqli_connect_errno($handle))
           {
@@ -26,11 +26,21 @@
 
 
            ?>
-            <div class="card border-light"><img class="card-img-top mx-auto w-50 d-block" src="<?php echo$row["image"] ?>"/><?php } ?>
-                <div class="card-body">
-                    <h4 class="card-title">Title</h4>
-                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-info" type="button">Check More</button></div>
-            </div>
+
+
+            <figure class="snip1527">
+            <div class="image"><img class=" mx-auto w-100  d-block" src="<?php echo$row["image"] ?>"<?php } ?> alt="pr-sample23" /></div>
+
+            <figcaption>
+              <div class="date"><span class="day">28</span><span class="month">Oct</span></div>
+              <h3>Dark Souls: Remaster ++</h3>
+              <p>
+
+                summary
+              </p>
+            </figcaption>
+            <a href="news-d.php"></a>
+          </figure>
 
             <?php
 
@@ -40,11 +50,19 @@
 
 
              ?>
-            <div class="card border-light "><img class="card-img-top mx-auto w-50 d-block" src="<?php echo$row["image"] ?>"/><?php } ?>
-                <div class="card-body">
-                    <h4 class="card-title">Title</h4>
-                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-info" type="button">Check More</button></div>
-            </div>
+             <figure class="snip1527">
+             <div class="image"><img class=" mx-auto w-100 d-block" src="<?php echo$row["image"] ?>"<?php } ?> alt="pr-sample23" /></div>
+
+             <figcaption>
+               <div class="date"><span class="day">28</span><span class="month">Oct</span></div>
+               <h3>titletitletitletitletitletitle</h3>
+               <p>
+
+                 summary
+               </p>
+             </figcaption>
+             <a href="news-d.php"></a>
+           </figure>
 
             <?php
 
@@ -54,11 +72,19 @@
 
 
              ?>
-            <div class="card border-light"><img class="card-img-top mx-auto w-50 d-block" src="<?php echo$row["image"] ?>"/><?php } ?>
-                <div class="card-body">
-                    <h4 class="card-title">Title</h4>
-                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-info" type="button">Check More</button></div>
-            </div>
+             <figure class="snip1527">
+             <div class="image"><img class=" mx-auto w-100 d-block" src="<?php echo$row["image"] ?>"<?php } ?> alt="pr-sample23" /></div>
+
+             <figcaption>
+               <div class="date"><span class="day">28</span><span class="month">Oct</span></div>
+               <h3>titletitletitletitletitletitle</h3>
+               <p>
+
+                 summary
+               </p>
+             </figcaption>
+             <a href="news-d.php"></a>
+           </figure>
         </div>
     </div>
 

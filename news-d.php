@@ -38,10 +38,7 @@ $result = $handle->query($sql);
       <?php echo $row["NewsDesc"];
     	}} ?>
     </p><img class="d-block mx-auto" src="assets/img/desk.jpg">
-    <p class="lead text-left mx-auto" style="width:500px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis mauris accumsan, aliquet dui vel, rutrum dolor. Nunc vitae auctor metus. Quisque posuere nibh ut sem tincidunt, quis feugiat elit lobortis. Sed ut fringilla purus. Suspendisse volutpat
-        ex non sem vehicula venenatis ut sed purus. Nunc eget fermentum metus, non consectetur velit. Donec semper leo a tellus posuere mollis. Duis a eleifend metus. Sed viverra enim sit amet mattis viverra. Ut euismod viverra lectus id aliquam. Cras
-        eget odio mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ipsum nulla, vestibulum id diam eu, malesuada malesuada ex. Vestibulum et volutpat mauris. Donec sagittis sem vitae lacinia pellentesque.
-        Ut mattis viverra aliquam.</p>
+    <p class="lead text-left mx-auto" style="width:500px;"></p>
 
         <?php include 'comment.php' ?>
 

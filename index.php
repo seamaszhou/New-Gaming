@@ -3,6 +3,7 @@
 
 <?php include 'php_files/head.php'; ?>
 
+
 <body>
     <div>
 	<?php include 'php_files/nav.php'; ?>
@@ -23,16 +24,16 @@
     <div style="background-size:contain;background-repeat:no-repeat;height:750px;">
 
         <h1 class="text-center" style="font-weight:bold;padding-top:100px;">New Games</h1>
-        <div style="padding:0;padding-top:30px;padding-right:300px;padding-left:300px;">
+        <div style="padding:0;padding-top:30px;" class="row justify-content-center align-items-center">
           <?php
-          session_start();
+
 
           $handle = db_connect();
           if (mysqli_connect_errno($handle))
           {
               echo "fail connect DB " . mysqli_connect_error();
           }
-          $res= mysqli_query($handle,"SELECT * FROM stories where id in (1)");
+          $res= mysqli_query($handle,"SELECT * FROM games where id in (1)");
 
           while ($row = mysqli_fetch_array($res)) {
 
@@ -63,7 +64,7 @@
 
             <?php
 
-            $res= mysqli_query($handle,"SELECT * FROM stories where id in (2)");
+            $res= mysqli_query($handle,"SELECT * FROM games where id in (2)");
 
             while ($row = mysqli_fetch_array($res)) {
 
@@ -89,7 +90,7 @@
 
             <?php
 
-            $res= mysqli_query($handle,"SELECT * FROM stories where id in (3)");
+            $res= mysqli_query($handle,"SELECT * FROM games where id in (3)");
 
             while ($row = mysqli_fetch_array($res)) {
 
@@ -117,19 +118,19 @@
 
 
 
-    <?php $sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary FROM news_desc WHERE NewsID = 1";
+<!--    <?php $sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary,image FROM news WHERE NewsID = 1";
     $result = $handle->query($sql); ?>
 
-
+    <?php if($result -> num_rows > 0){
+    while($row = $result -> fetch_assoc()){?>
 
     <div style="background-size:contain;background-repeat:no-repeat;height:550px;">
         <h1 class="text-center" style="font-weight:bold;">News</h1>
         <div class="card-group" style="padding:0;padding-top:30px;padding-right:300px;padding-left:300px;">
-            <div class="card"><img class="card-img-top w-100 d-block">
+            <div class="card"><img class="card-img-top w-50 d-block" src="<?php echo$row["image"] ?>">
                 <div class="card-body">
 
-                    <h4 class="card-title"><?php if($result -> num_rows > 0){
-                  	while($row = $result -> fetch_assoc()){
+                    <h4 class="card-title"><?php
                   		echo $row["NewsTitle"];
 
                    ?></h4>
@@ -137,7 +138,7 @@
                   }} ?></p><button class="btn btn-info" type="button">Check More</button></div>
             </div>
 
-            <?php $sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary FROM news_desc WHERE NewsID = 2";
+            <?php $sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary FROM news WHERE NewsID = 2";
             $result = $handle->query($sql); ?>
             <div class="card"><img class="card-img-top w-100 d-block">
                 <div class="card-body">
@@ -150,7 +151,7 @@
                   }} ?></p><button class="btn btn-info" type="button">Check More</button></div>
             </div>
 
-            <?php $sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary FROM news_desc WHERE NewsID = 3";
+            <?php $sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary FROM news WHERE NewsID = 3";
             $result = $handle->query($sql); ?>
             <div class="card"><img class="card-img-top w-100 d-block">
                 <div class="card-body">
@@ -162,6 +163,114 @@
                     <p class="card-text"><?php echo $row["Summary"];
                   }} ?></p><button class="btn btn-info" type="button">Check More</button></div>
             </div>
+        </div>
+    </div>-->
+
+    <div style="background-size:contain;background-repeat:no-repeat;height:750px;">
+
+        <h1 class="text-center" style="font-weight:bold;padding-top:100px;">News</h1>
+        <div style="padding:0;padding-top:30px;" class="row justify-content-center align-items-center">
+          <?php
+
+
+          $handle = db_connect();
+
+          $sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary,image FROM news WHERE NewsID = 1";
+          $result = $handle->query($sql);
+          while ($row = $result -> fetch_assoc()) {
+
+
+           ?>
+
+            <figure class="snip1527">
+
+            <div class="image">
+
+
+            <img class=" mx-auto w-100  d-block" src="<?php echo$row["image"] ?>"alt="pr-sample23" /></div>
+
+            <figcaption>
+              <div class="date"><span class="day">29</span><span class="month">May</span></div>
+              <h3><?php echo$row["NewsTitle"]   ?></h3>
+              <p>
+              <?php echo$row["Summary"]   ?>    <?php } ?>
+              </p>
+            </figcaption>
+
+                <div class="demo-actions" id="video1">
+                  <a href="#" class="btn btn-default btn-show"></a>
+
+
+            </div>
+          </figure>
+
+          <?php
+
+
+
+
+          $sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary,image FROM news WHERE NewsID = 2";
+          $result = $handle->query($sql);
+          while ($row = $result -> fetch_assoc()) {
+
+
+           ?>
+
+            <figure class="snip1527">
+
+            <div class="image">
+
+
+            <img class=" mx-auto w-100  d-block" src="<?php echo$row["image"] ?>"alt="pr-sample23" /></div>
+
+            <figcaption>
+              <div class="date"><span class="day">29</span><span class="month">May</span></div>
+              <h3><?php echo$row["NewsTitle"]   ?></h3>
+              <p>
+              <?php echo$row["Summary"]   ?>    <?php } ?>
+              </p>
+            </figcaption>
+
+                <div class="demo-actions" id="video1">
+                  <a href="#" class="btn btn-default btn-show"></a>
+
+
+            </div>
+          </figure>
+
+          <?php
+
+
+
+
+          $sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary,image FROM news WHERE NewsID = 3";
+          $result = $handle->query($sql);
+          while ($row = $result -> fetch_assoc()) {
+
+
+           ?>
+
+            <figure class="snip1527">
+
+            <div class="image">
+
+
+            <img class=" mx-auto w-100  d-block" src="<?php echo$row["image"] ?>"alt="pr-sample23" /></div>
+
+            <figcaption>
+              <div class="date"><span class="day">29</span><span class="month">May</span></div>
+              <h3><?php echo$row["NewsTitle"]   ?></h3>
+              <p>
+              <?php echo$row["Summary"]   ?>    <?php } ?>
+              </p>
+            </figcaption>
+
+                <div class="demo-actions" id="video1">
+                  <a href="#" class="btn btn-default btn-show"></a>
+
+
+            </div>
+          </figure>
         </div>
     </div>
 
@@ -197,7 +306,7 @@
                     $('#video1 .btn-show').on('click', function(){
                         new $.flavr({
                             title       : 'Ikaruga',
-                            content     : '<iframe width="820" height="315" src="https://www.youtube.com/embed/1yVOMHz9luo" frameborder="0" allowfullscreen>' +
+                            content     : '<iframe width="820" height="315" src="https://www.youtube.com/embed/kaD9eZinNXo" frameborder="0" allowfullscreen>' +
                                             '</iframe>',
                             buttons     : {
                                 close   : {},

@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/News-Cards.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/styles.css">
+    <link href="../../assets/css/search.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-light navbar-expand-md navigation-clean">
@@ -30,6 +32,9 @@
 	                </li>
 	                <li class="nav-item" role="presentation"><a class="nav-link" href="../../collection.php">Collection</a></li>
 	                <li class="nav-item" role="presentation"><a class="nav-link" href="account"><i class="fa fa-user"></i></a></li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" href="#" id="addClass"><i class="fa fa-search"></i></span></a>
+                  </li>
 	            </ul>
 	        </div>
 	    </div>

@@ -22,7 +22,6 @@
   <link rel="stylesheet" type="text/css" href="./assets/index_files/animate.css">
   <link rel="stylesheet" type="text/css" href="./assets/index_files/flavr.css">
   <link rel="stylesheet" type="text/css" href="assets/css/component.css" />
-
   <link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/demo.css" />
 </head>
@@ -37,7 +36,7 @@
 $handle = db_connect();
 
 
-$sql = "SELECT NewsID, NewsTitle, NewsDesc FROM news_desc WHERE NewsID = 3";
+$sql = "SELECT NewsID, NewsTitle, NewsDesc FROM news WHERE NewsID = 3";
 $result = $handle->query($sql);
 
 

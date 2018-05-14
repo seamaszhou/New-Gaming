@@ -47,10 +47,10 @@
             <img class=" mx-auto w-100  d-block" src="<?php echo$row["image"] ?>"<?php } ?> alt="pr-sample23" /></div>
 
             <figcaption>
-              <div class="date"><span class="day">28</span><span class="month">Oct</span></div>
-              <h3>Dark Souls: Remaster</h3>
+              <div class="date"><span class="day">29</span><span class="month">May</span></div>
+              <h3>Ikaruga</h3>
               <p>
-                Then, there was fire. Re-experience the critically acclaimed, genre-defining game that started it all. Beautifully remastered, return to Lordran in stunning high-definition detail running at 60fps. Dark Souls Remastered includes the main game plus the Artorias of the Abyss DLC.
+                Ikaruga is a shoot 'em up developed by Treasure. It is the spiritual sequel to Radiant Silvergun and was originally released in Japanese arcades in December 2001.
               </p>
             </figcaption>
 
@@ -73,11 +73,11 @@
              <div class="image"><img class=" mx-auto w-100 d-block" src="<?php echo$row["image"] ?>"<?php } ?> alt="pr-sample23" /></div>
 
              <figcaption>
-               <div class="date"><span class="day">28</span><span class="month">Oct</span></div>
-               <h3>Japanese game</h3>
+               <div class="date"><span class="day">18</span><span class="month">May</span></div>
+               <h3>Little Nightmares</h3>
                <p>
 
-                 Then, there was fire. Re-experience the critically acclaimed, genre-defining game that started it all. Beautifully remastered, return to Lordran in stunning high-definition detail running at 60fps. Dark Souls Remastered includes the main game plus the Artorias of the Abyss DLC.
+                 Little Nightmares is a puzzle-platformer horror adventure game developed by Tarsier Studios and published by Bandai Namco Entertainment for Microsoft Windows, PlayStation 4, Nintendo Switch, and Xbox One.
                </p>
              </figcaption>
              <div class="demo-actions" id="video2">
@@ -99,10 +99,10 @@
              <div class="image"><img class=" mx-auto w-100 d-block" src="<?php echo$row["image"] ?>"<?php } ?> alt="pr-sample23" /></div>
 
              <figcaption>
-               <div class="date"><span class="day">28</span><span class="month">Oct</span></div>
-               <h3>Game Name</h3>
+               <div class="date"><span class="day">3</span><span class="month">May</span></div>
+               <h3>Donkey Kong Country: Tropical Freeze</h3>
                <p>
-Then, there was fire. Re-experience the critically acclaimed, genre-defining game that started it all. Beautifully remastered, return to Lordran in stunning high-definition detail running at 60fps. Dark Souls Remastered includes the main game plus the Artorias of the Abyss DLC.
+                 This title includes all the fun and challenge of the original game, plus a new beginner-friendly mode that lets players enjoy this critically acclaimed adventure as groovy surfing simian Funky Kong.
                </p>
              </figcaption>
              <div class="demo-actions" id="video3">
@@ -192,11 +192,11 @@ Then, there was fire. Re-experience the critically acclaimed, genre-defining gam
 
 
     $(document).ready(function () {
-                    
+
 
                     $('#video1 .btn-show').on('click', function(){
                         new $.flavr({
-                            title       : 'Dark Souls: Remaster',
+                            title       : 'Ikaruga',
                             content     : '<iframe width="820" height="315" src="https://www.youtube.com/embed/1yVOMHz9luo" frameborder="0" allowfullscreen>' +
                                             '</iframe>',
                             buttons     : {
@@ -213,8 +213,8 @@ Then, there was fire. Re-experience the critically acclaimed, genre-defining gam
 
                     $('#video2 .btn-show').on('click', function(){
                         new $.flavr({
-                            title       : 'Dark Souls: Remaster',
-                            content     : '<iframe width="820" height="315" src="https://www.youtube.com/embed/1yVOMHz9luo" frameborder="0" allowfullscreen>' +
+                            title       : 'Little Nightmares',
+                            content     : '<iframe width="820" height="315" src="https://www.youtube.com/embed/UuM2Sfh22c0" frameborder="0" allowfullscreen>' +
                                             '</iframe>',
                             buttons     : {
                                 close   : {},
@@ -230,8 +230,8 @@ Then, there was fire. Re-experience the critically acclaimed, genre-defining gam
 
                     $('#video3 .btn-show').on('click', function(){
                         new $.flavr({
-                            title       : 'Dark Souls: Remaster',
-                            content     : '<iframe width="820" height="315" src="https://www.youtube.com/embed/1yVOMHz9luo" frameborder="0" allowfullscreen>' +
+                            title       : 'Donkey Kong Country: Tropical Freeze',
+                            content     : '<iframe width="820" height="315" src="https://www.youtube.com/embed/1psp2t0Zi9o" frameborder="0" allowfullscreen>' +
                                             '</iframe>',
                             buttons     : {
                                 close   : {},

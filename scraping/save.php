@@ -20,7 +20,7 @@ require 'vendor/autoload.php';
 
 //url
 $term = 'pig';
-$url = "http://ku.gamersky.com/release/pc_201805/";
+$url = "http://ku.gamersky.com/release/xboxone_201805/";
 $client = new \GuzzleHttp\Client();
 
 //go get the data from url

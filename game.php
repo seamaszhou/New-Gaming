@@ -18,17 +18,14 @@
               session_start();
 
               $handle = db_connect();
-              if (mysqli_connect_errno($handle))
-              {
-                  echo "fail connect DB " . mysqli_connect_error();
-              }
+
               $res= mysqli_query($handle,"SELECT * FROM stories where id in (1,2)");
 
               while ($row = mysqli_fetch_array($res)) {
 
 
                ?>
-                <div class="col-6 col-sm-4 col-md-3 filtr-item" data-category="1">
+                <div class="col-6 col-sm-4 col-md-3 filtr-item" data-category="3">
                   <a href="game-detail.php">
                 <img src="<?php echo$row["image"] ?>" /></a></div>
                 <?php } ?>
@@ -37,13 +34,13 @@
                 $res1= mysqli_query($handle,"SELECT * FROM stories where id in (3,4)");
 
                 while ($row = mysqli_fetch_array($res1)) {
-                 ?><div class="col-6 col-sm-4 col-md-3 filtr-item" data-category="2">
+                 ?><div class="col-6 col-sm-4 col-md-3 filtr-item" data-category="3">
                    <a href="<?php echo$row["image"] ?>">
                  <img src="<?php echo$row["image"] ?>" /></a></div>
                 <?php } ?>
 
                 <?php
-                $res1= mysqli_query($handle,"SELECT * FROM stories where id in (5,6)");
+                $res1= mysqli_query($handle,"SELECT * FROM stories where id in (5)");
 
                 while ($row = mysqli_fetch_array($res1)) {
                  ?><div class="col-6 col-sm-4 col-md-3 filtr-item" data-category="3">
@@ -51,10 +48,10 @@
                  <img src="<?php echo$row["image"] ?>" /></a></div>
                 <?php } ?>
                 <?php
-                $res1= mysqli_query($handle,"SELECT * FROM stories where id in (7,8)");
+                $res1= mysqli_query($handle,"SELECT * FROM stories where id in (6,7)");
 
                 while ($row = mysqli_fetch_array($res1)) {
-                 ?><div class="col-6 col-sm-4 col-md-3 filtr-item" data-category="4">
+                 ?><div class="col-6 col-sm-4 col-md-3 filtr-item" data-category="1">
                    <a href="<?php echo$row["image"] ?>">
                  <img src="<?php echo$row["image"] ?>" /></a></div>
                 <?php } ?>

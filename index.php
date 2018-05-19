@@ -45,14 +45,14 @@
             <div class="image">
 
 
-            <img class=" mx-auto w-100  d-block" src="<?php echo$row["image"] ?>"<?php } ?> alt="pr-sample23" /></div>
+            <img class=" mx-auto w-100  d-block" src="<?php echo$row["image"] ?>" alt="pr-sample23" /></div>
 
             <figcaption>
-              <div class="date"><span class="day">29</span><span class="month">May</span></div>
-              <h3>Ikaruga</h3>
+              <div class="date"><span class="day"><?php echo$row["Day"] ?></span><span class="month">May</span></div>
+              <h3><?php echo$row["Name"] ?></h3>
               <p>
-                Ikaruga is a shoot 'em up developed by Treasure. It is the spiritual sequel to Radiant Silvergun and was originally released in Japanese arcades in December 2001.
-              </p>
+                <?php echo$row["short_desc"] ?>
+              </p><?php } ?>
             </figcaption>
 
                 <div class="demo-actions" id="video1">
@@ -71,21 +71,25 @@
 
              ?>
              <figure class="snip1527">
-             <div class="image"><img class=" mx-auto w-100 d-block" src="<?php echo$row["image"] ?>"<?php } ?> alt="pr-sample23" /></div>
+
+             <div class="image">
+
+
+             <img class=" mx-auto w-100  d-block" src="<?php echo$row["image"] ?>" alt="pr-sample23" /></div>
 
              <figcaption>
-               <div class="date"><span class="day">18</span><span class="month">May</span></div>
-               <h3>Little Nightmares</h3>
+               <div class="date"><span class="day"><?php echo$row["Day"] ?></span><span class="month">May</span></div>
+               <h3><?php echo$row["Name"] ?></h3>
                <p>
-
-                 Little Nightmares is a puzzle-platformer horror adventure game developed by Tarsier Studios and published by Bandai Namco Entertainment for Microsoft Windows, PlayStation 4, Nintendo Switch, and Xbox One.
-               </p>
+                 <?php echo$row["short_desc"] ?>
+               </p><?php } ?>
              </figcaption>
-             <div class="demo-actions" id="video2">
-               <a href="#" class="btn btn-default btn-show"></a>
+
+                 <div class="demo-actions" id="video2">
+                   <a href="#" class="btn btn-default btn-show"></a>
 
 
-         </div>
+             </div>
            </figure>
 
             <?php
@@ -97,20 +101,25 @@
 
              ?>
              <figure class="snip1527">
-             <div class="image"><img class=" mx-auto w-100 d-block" src="<?php echo$row["image"] ?>"<?php } ?> alt="pr-sample23" /></div>
+
+             <div class="image">
+
+
+             <img class=" mx-auto w-100  d-block" src="<?php echo$row["image"] ?>" alt="pr-sample23" /></div>
 
              <figcaption>
-               <div class="date"><span class="day">3</span><span class="month">May</span></div>
-               <h3>Donkey Kong Country: Tropical Freeze</h3>
+               <div class="date"><span class="day"><?php echo$row["Day"] ?></span><span class="month">May</span></div>
+               <h3><?php echo$row["Name"] ?></h3>
                <p>
-                 This title includes all the fun and challenge of the original game, plus a new beginner-friendly mode that lets players enjoy this critically acclaimed adventure as groovy surfing simian Funky Kong.
-               </p>
+                 <?php echo$row["short_desc"] ?>
+               </p><?php } ?>
              </figcaption>
-             <div class="demo-actions" id="video3">
-               <a href="#" class="btn btn-default btn-show"></a>
+
+                 <div class="demo-actions" id="video3">
+                   <a href="#" class="btn btn-default btn-show"></a>
 
 
-         </div>
+             </div>
            </figure>
         </div>
     </div>
@@ -175,7 +184,7 @@
 
           $handle = db_connect();
 
-          $sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary,image FROM news WHERE NewsID = 1";
+          $sql = "SELECT NewsID, NewsTitle, NewsDesc, short_desc,image FROM news WHERE NewsID = 1";
           $result = $handle->query($sql);
           while ($row = $result -> fetch_assoc()) {
 
@@ -193,7 +202,38 @@
               <div class="date"><span class="day">29</span><span class="month">May</span></div>
               <h3><?php echo$row["NewsTitle"]   ?></h3>
               <p>
-              <?php echo$row["Summary"]   ?>    <?php } ?>
+               <?php } ?>
+              </p>
+            </figcaption>
+
+
+              <a href="news/1.php"></a>
+          </figure>
+
+          <?php
+
+
+
+
+          $sql = "SELECT NewsID, NewsTitle, NewsDesc, short_desc,image FROM news WHERE NewsID = 2";
+          $result = $handle->query($sql);
+          while ($row = $result -> fetch_assoc()) {
+
+
+           ?>
+
+            <figure class="snip1527">
+
+            <div class="image">
+
+
+            <img class=" mx-auto w-100  d-block" src="<?php echo$row["image"] ?>"alt="pr-sample23" /></div>
+
+            <figcaption>
+              <div class="date"><span class="day">29</span><span class="month">May</span></div>
+              <h3><?php echo$row["NewsTitle"]   ?></h3>
+              <p>
+               <?php } ?>
               </p>
             </figcaption>
 
@@ -209,7 +249,7 @@
 
 
 
-          $sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary,image FROM news WHERE NewsID = 2";
+          $sql = "SELECT NewsID, NewsTitle, NewsDesc, short_desc,image FROM news WHERE NewsID = 3";
           $result = $handle->query($sql);
           while ($row = $result -> fetch_assoc()) {
 
@@ -227,41 +267,7 @@
               <div class="date"><span class="day">29</span><span class="month">May</span></div>
               <h3><?php echo$row["NewsTitle"]   ?></h3>
               <p>
-              <?php echo$row["Summary"]   ?>    <?php } ?>
-              </p>
-            </figcaption>
-
-                <div class="demo-actions" id="video1">
-                  <a href="#" class="btn btn-default btn-show"></a>
-
-
-            </div>
-          </figure>
-
-          <?php
-
-
-
-
-          $sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary,image FROM news WHERE NewsID = 3";
-          $result = $handle->query($sql);
-          while ($row = $result -> fetch_assoc()) {
-
-
-           ?>
-
-            <figure class="snip1527">
-
-            <div class="image">
-
-
-            <img class=" mx-auto w-100  d-block" src="<?php echo$row["image"] ?>"alt="pr-sample23" /></div>
-
-            <figcaption>
-              <div class="date"><span class="day">29</span><span class="month">May</span></div>
-              <h3><?php echo$row["NewsTitle"]   ?></h3>
-              <p>
-              <?php echo$row["Summary"]   ?>    <?php } ?>
+                  <?php } ?>
               </p>
             </figcaption>
 
@@ -311,7 +317,7 @@
                             buttons     : {
                                 close   : {},
                                 checkmore :{action: function(){
-                                    location.href = "http://google.com";
+                                    location.href = "games/1.php";
                                 }}
                             }
                         });
@@ -328,7 +334,7 @@
                             buttons     : {
                                 close   : {},
                                 checkmore :{action: function(){
-                                    location.href = "http://google.com";
+                                    location.href = "games/2.php";
                                 }}
                             }
                         });
@@ -345,7 +351,7 @@
                             buttons     : {
                                 close   : {},
                                 checkmore :{action: function(){
-                                    location.href = "http://google.com";
+                                    location.href = "games/3.php";
                                 }}
                             }
                         });

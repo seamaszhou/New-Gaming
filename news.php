@@ -14,7 +14,7 @@
     </div>
     <div style="padding:0;padding-top:30px;" class="row justify-content-center align-items-center">
       <?php $handle = db_connect();
-      $sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary,image FROM news WHERE NewsID = 1";
+      $sql = "SELECT NewsID, NewsTitle, NewsDesc, short_desc,image FROM news WHERE NewsID = 1";
       $result = $handle->query($sql);
       while ($row = $result -> fetch_assoc()) { ?>
 	<figure class="snip1527">
@@ -28,14 +28,14 @@
    ?></h3>
     <p>
 
-      <?php echo $row["Summary"];
+      <?php echo $row["short_desc"];
     } ?>
     </p>
   </figcaption>
   <a href="news-d.php"></a>
 </figure>
 <?php
-$sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary,image FROM news WHERE NewsID = 2";
+$sql = "SELECT NewsID, NewsTitle, NewsDesc, short_desc,image FROM news WHERE NewsID = 2";
 $result = $handle->query($sql);
 while ($row = $result -> fetch_assoc()) { ?>
 <figure class="snip1527">
@@ -49,14 +49,14 @@ echo $row["NewsTitle"];
 ?></h3>
 <p>
 
-<?php echo $row["Summary"];
+<?php echo $row["short_desc"];
 } ?>
 </p>
 </figcaption>
 <a href="news-d.php"></a>
 </figure>
 <?php
-$sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary,image FROM news WHERE NewsID = 3";
+$sql = "SELECT NewsID, NewsTitle, NewsDesc, short_desc,image FROM news WHERE NewsID = 3";
 $result = $handle->query($sql);
 while ($row = $result -> fetch_assoc()) { ?>
 <figure class="snip1527">
@@ -70,7 +70,7 @@ echo $row["NewsTitle"];
 ?></h3>
 <p>
 
-<?php echo $row["Summary"];
+<?php echo $row["short_desc"];
 } ?>
 </p>
 </figcaption>
@@ -78,7 +78,7 @@ echo $row["NewsTitle"];
 </figure>
 
 <?php
-$sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary,image FROM news WHERE NewsID = 1";
+$sql = "SELECT NewsID, NewsTitle, NewsDesc, short_desc,image FROM news WHERE NewsID = 1";
 $result = $handle->query($sql);
 while ($row = $result -> fetch_assoc()) { ?>
 <figure class="snip1527">
@@ -92,14 +92,14 @@ echo $row["NewsTitle"];
 ?></h3>
 <p>
 
-<?php echo $row["Summary"];
+<?php echo $row["short_desc"];
 } ?>
 </p>
 </figcaption>
 <a href="news-d.php"></a>
 </figure>
 <?php
-$sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary,image FROM news WHERE NewsID = 2";
+$sql = "SELECT NewsID, NewsTitle, NewsDesc, short_desc,image FROM news WHERE NewsID = 2";
 $result = $handle->query($sql);
 while ($row = $result -> fetch_assoc()) { ?>
 <figure class="snip1527">
@@ -113,14 +113,14 @@ echo $row["NewsTitle"];
 ?></h3>
 <p>
 
-<?php echo $row["Summary"];
+<?php echo $row["short_desc"];
 } ?>
 </p>
 </figcaption>
 <a href="news-d.php"></a>
 </figure>
 <?php
-$sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary,image FROM news WHERE NewsID = 3";
+$sql = "SELECT NewsID, NewsTitle, NewsDesc, short_desc,image FROM news WHERE NewsID = 3";
 $result = $handle->query($sql);
 while ($row = $result -> fetch_assoc()) { ?>
 <figure class="snip1527">
@@ -134,14 +134,14 @@ echo $row["NewsTitle"];
 ?></h3>
 <p>
 
-<?php echo $row["Summary"];
+<?php echo $row["short_desc"];
 } ?>
 </p>
 </figcaption>
 <a href="news-d.php"></a>
 </figure>
 <?php
-$sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary,image FROM news WHERE NewsID = 2";
+$sql = "SELECT NewsID, NewsTitle, NewsDesc, short_desc,image FROM news WHERE NewsID = 2";
 $result = $handle->query($sql);
 while ($row = $result -> fetch_assoc()) { ?>
 <figure class="snip1527">
@@ -155,14 +155,14 @@ echo $row["NewsTitle"];
 ?></h3>
 <p>
 
-<?php echo $row["Summary"];
+<?php echo $row["short_desc"];
 } ?>
 </p>
 </figcaption>
 <a href="news-d.php"></a>
 </figure>
 <?php
-$sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary,image FROM news WHERE NewsID = 1";
+$sql = "SELECT NewsID, NewsTitle, NewsDesc, short_desc,image FROM news WHERE NewsID = 1";
 $result = $handle->query($sql);
 while ($row = $result -> fetch_assoc()) { ?>
 <figure class="snip1527">
@@ -176,14 +176,14 @@ echo $row["NewsTitle"];
 ?></h3>
 <p>
 
-<?php echo $row["Summary"];
+<?php echo $row["short_desc"];
 } ?>
 </p>
 </figcaption>
 <a href="news-d.php"></a>
 </figure>
 <?php
-$sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary,image FROM news WHERE NewsID = 2";
+$sql = "SELECT NewsID, NewsTitle, NewsDesc, short_desc,image FROM news WHERE NewsID = 2";
 $result = $handle->query($sql);
 while ($row = $result -> fetch_assoc()) { ?>
 <figure class="snip1527">
@@ -197,14 +197,14 @@ echo $row["NewsTitle"];
 ?></h3>
 <p>
 
-<?php echo $row["Summary"];
+<?php echo $row["short_desc"];
 } ?>
 </p>
 </figcaption>
 <a href="news-d.php"></a>
 </figure>
 <?php
-$sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary,image FROM news WHERE NewsID = 3";
+$sql = "SELECT NewsID, NewsTitle, NewsDesc, short_desc,image FROM news WHERE NewsID = 3";
 $result = $handle->query($sql);
 while ($row = $result -> fetch_assoc()) { ?>
 <figure class="snip1527">
@@ -218,7 +218,7 @@ echo $row["NewsTitle"];
 ?></h3>
 <p>
 
-<?php echo $row["Summary"];
+<?php echo $row["short_desc"];
 } ?>
 </p>
 </figcaption>

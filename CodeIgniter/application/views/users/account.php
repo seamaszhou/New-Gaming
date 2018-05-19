@@ -66,7 +66,8 @@
             <div class="tab-content p-b-3">
                 <div class="tab-pane active" id="profile">
                     <h4 class="m-y-2">User Name : <?php echo $user['name']; ?></h4>
-                    <a href="<?php echo base_url(); ?>users/logout">logout</a>
+                    <a href="<?php echo base_url(); ?>users/logout">logout</a><br>
+                    <a href="<?php echo base_url(); ?>email">Verify your email</a>
                     <div class="row">
                         <div class="col-md-6">
                             <h6>Email address</h6>
@@ -134,14 +135,10 @@
 
             </div>
         </div>
-        <div class="col-lg-4 pull-lg-8 text-xs-center">
-            <img src="//placehold.it/150" class="m-x-auto img-fluid img-circle" alt="avatar">
-            <h6 class="m-t-2">Upload a different photo</h6>
-            <label class="custom-file">
-                <input type="file" id="file" class="custom-file-input">
-                <span class="custom-file-control">Choose file</span>
-            </label>
-        </div>
+
+
+
+
     </div>
 </div>
 <hr>

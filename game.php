@@ -26,7 +26,7 @@
 
                ?>
                 <div class="col-6 col-sm-4 col-md-3 filtr-item" data-category="3">
-                  <a href="game-detail.php">
+                  <a href="Games/<?php echo$row["id"]?>.php">
                 <img src="<?php echo$row["image"] ?>" /></a></div>
                 <?php } ?>
 

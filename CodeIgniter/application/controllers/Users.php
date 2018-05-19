@@ -24,6 +24,9 @@ class Users extends CI_Controller {
         }
     }
 
+    /***/
+
+
     /*
      * User login
      */
@@ -87,7 +90,9 @@ class Users extends CI_Controller {
                 $insert = $this->user->insert($userData);
                 if($insert){
                     $this->session->set_userdata('success_msg', 'Your registration was successfully. Please login to your account.');
-                    redirect('users/login');
+                    
+
+                    redirect('email');
                 }else{
                     $data['error_msg'] = 'Some problems occured, please try again.';
                 }
@@ -122,4 +127,7 @@ class Users extends CI_Controller {
             return TRUE;
         }
     }
+
+
+
 }

@@ -9,10 +9,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
  </head>
  <body>
-  
+
   <br />
   <br />
   <div class="container">
+    
    <form method="POST" id="comment_form">
     <div class="form-group">
      <input type="text" name="comment_name" id="comment_name" class="form-control" placeholder="Enter Name" />

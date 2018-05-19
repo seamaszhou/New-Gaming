@@ -13,6 +13,8 @@ class Email extends CI_Controller {
       'smtp_pass' => 'Seamas@yinmuhan0516'
 
   );
+
+
   $this->load->library('email',$config);
   $this->email->set_newline("\r\n");
   $this->email->from('seamaszhou@gmail.com','MyWebsite');
@@ -28,6 +30,8 @@ class Email extends CI_Controller {
 //Send email
 if ($this->email->send()) {
   echo 'Your email was sent';
+
+  
   // code...
 }
 else{

@@ -9,14 +9,14 @@ class User extends CI_Model{
     function getRows($params = array()){
         $this->db->select('*');
         $this->db->from($this->userTbl);
-        
+
         //fetch data by conditions
         if(array_key_exists("conditions",$params)){
 			foreach ($params['conditions'] as $key => $value) {
 				$this->db->where($key,$value);
 			}
 		}
-        
+
         if(array_key_exists("id",$params)){
             $this->db->where('id',$params['id']);
 			$query = $this->db->get();
@@ -41,7 +41,7 @@ class User extends CI_Model{
         //return fetched data
         return $result;
     }
-    
+
 	/*
 	 * Insert user information
 	 */
@@ -53,10 +53,10 @@ class User extends CI_Model{
         if(!array_key_exists("modified", $data)){
             $data['modified'] = date("Y-m-d H:i:s");
         }
-        
+
         //insert user data to users table
         $insert = $this->db->insert($this->userTbl, $data);
-        
+
         //return the status
         if($insert){
             return $this->db->insert_id();;
@@ -64,5 +64,7 @@ class User extends CI_Model{
             return false;
         }
     }
+
+    
 
 }

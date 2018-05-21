@@ -32,7 +32,7 @@
     } ?>
     </p>
   </figcaption>
-  <a href="news-d.php"></a>
+  <a href="News/gow.php"></a>
 </figure>
 <?php
 $sql = "SELECT NewsID, NewsTitle, NewsDesc, short_desc,image FROM news WHERE NewsID = 2";

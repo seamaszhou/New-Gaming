@@ -14,13 +14,15 @@ class Email extends CI_Controller {
 
   );
 
-
+  $email = $this->session->userdata('email');
+  echo $email;
   $this->load->library('email',$config);
   $this->email->set_newline("\r\n");
   $this->email->from('seamaszhou@gmail.com','MyWebsite');
-  $this->email->to('seamaszhou@gmail.com');
-  $this->email->subject('How to send email via SMTP server in CodeIgniter');
+  $this->email->to($email);
+  $this->email->subject('Welcome to New-Gaming!');
   $this->email->message($htmlContent);
+
 
 
 //Email content
@@ -31,7 +33,10 @@ class Email extends CI_Controller {
 if ($this->email->send()) {
   echo 'Your email was sent';
 
-  
+
+  $this->session->set_userdata('success_msg', 'Welcome to New-gaming, a welcome email has been sent to your email!');
+  redirect('users/login');
+
   // code...
 }
 else{

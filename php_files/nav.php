@@ -12,7 +12,7 @@
                     <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="game.php">Games</a><a class="dropdown-item" role="presentation" href="news.php">News</a><a class="dropdown-item" role="presentation" href="#"></a></div>
                 </li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="collection.php">Collection</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="CodeIgniter/users/account"><i class="fa fa-user"></i></a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="./login/profile.php"><i class="fa fa-user"></i></a></li>
                 <li class="nav-item" role="presentation">
                   <a class="nav-link" href="#" id="addClass"><i class="fa fa-search"></i></span></a>
                 </li>

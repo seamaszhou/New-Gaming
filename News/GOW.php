@@ -62,8 +62,10 @@ $result = $handle->query($sql);
     	}} ?>
     </p>
     <p class="lead text-left mx-auto" style="width:500px;"></p>
+    <div class="container">
+  <?php include 'crud/comment.php' ?>
+    </div>
 
-        <?php include 'comment.php' ?>
 
 
     <script src="../assets/js/jquery.min.js"></script>

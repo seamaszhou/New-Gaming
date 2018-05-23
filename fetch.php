@@ -27,7 +27,8 @@ if($result )
  {
   $output .= '
     <td>'.$row["Name"].'</td>
-    <td><img src="'.$row["image"].'"/></td>
+    <td><a href="Games/'.$row["id"].'.php" ?>"<img src="'.$row["image"].'"/></a></td>
+
   ';
  }
  echo $output;

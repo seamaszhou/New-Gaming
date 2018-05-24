@@ -1,9 +1,9 @@
 <?php
 //db details
 $dbHost = 'localhost';
-$dbUsername = 'root';
-$dbPassword = '';
-$dbName = 'codexworld';
+$dbUsername = 'seamas';
+$dbPassword = 'zjd670810';
+$dbName = 'ezweb';
 
 //Connect and select the database
 $db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);

@@ -42,8 +42,8 @@ function getCalender($year = '',$month = '')
         <div id="event_list" class="none"></div>
         <!--For Add Event-->
         <div id="event_add" class="none">
-            <p>Add Event on <span id="eventDateView"></span></p>
-            <p><b>Event Title: </b><input type="text" id="eventTitle" value=""/></p>
+            <p>Add Game on <span id="eventDateView"></span></p>
+            <p><b>Game Title: </b><input type="text" id="eventTitle" value=""/></p>
             <input type="hidden" id="eventDate" value=""/>
             <input type="button" id="addEventBtn" value="Add"/>
         </div>
@@ -88,10 +88,10 @@ function getCalender($year = '',$month = '')
                         //Hover event popup
                         echo '<div id="date_popup_'.$currentDate.'" class="date_popup_wrap none">';
                         echo '<div class="date_window">';
-                        echo '<div class="popup_event">Events ('.$eventNum.')</div>';
-                        echo ($eventNum > 0)?'<a href="javascript:;" onclick="getEvents(\''.$currentDate.'\');">view events</a><br/>':'';
+                        echo '<div class="popup_event">Games ('.$eventNum.')</div>';
+                        echo ($eventNum > 0)?'<a href="javascript:;" onclick="getEvents(\''.$currentDate.'\');">view games</a><br/>':'';
                         //For Add Event
-                        echo '<a href="javascript:;" onclick="addEvent(\''.$currentDate.'\');">add event</a>';
+                        echo '<a href="javascript:;" onclick="addEvent(\''.$currentDate.'\');">add game</a>';
                         echo '</div></div>';
 
                         echo '</li>';

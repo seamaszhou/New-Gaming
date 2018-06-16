@@ -9,7 +9,7 @@
 $(document).ready(function(){
     $('.filtr-container').css('visibility','hidden');
     $('.filtr-controls').after('<div class="filtr-loading"></div>');
-    
+
     // init filterizr when images are loaded
     options = {
         callbacks: {
@@ -36,18 +36,17 @@ $(document).ready(function(){
         },
         layout: 'sameWidth'
     }
-    
+
     $('.filtr-container').imagesLoaded( function() {
         var filterizd = $('.filtr-container').filterizr(options);
         $('.filtr-container').css('visibility','visible');
         $('.filtr-loading').remove();
     });
-    
+
     // active class for controls
     $('.filtr-controls').on('click','span',function(){
         $('.filtr-controls').find('span').removeClass('active');
         $(this).addClass('active');
     });
-    
-});
 
+});

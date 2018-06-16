@@ -2,29 +2,14 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vgrpro</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/-Filterable-Cards-.css">
-    <link rel="stylesheet" href="assets/css/Filterable-Gallery-with-Lightbox.css">
-    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
-    <link rel="stylesheet" href="assets/css/Lightbox-Gallery.css">
-    <link rel="stylesheet" href="assets/css/mloureiro1973-login.css">
-    <link rel="stylesheet" href="assets/css/mloureiro1973-login.css">
-    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
-    <link rel="stylesheet" href="assets/css/News-Cards.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <?php include 'php_files/head.php'; ?>
 </head>
 
 <body>
     <div>
 	<?php include 'php_files/nav.php'; ?>
     </div>
-    <section class="py-5">
+    <section class="py-5 mt-5">
         <div class="container">
             <h1 class="text-center mb-4">FILTERABLE CARDS</h1>
             <div class="filtr-controls text-center lead text-uppercase mb-3"><span class="active d-inline-block mx-3 py-1 position-relative" data-filter="all">all </span><span class="d-inline-block mx-3 py-1 position-relative" data-filter="1">category 1 </span><span class="d-inline-block mx-3 py-1 position-relative"

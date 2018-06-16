@@ -1,3 +1,11 @@
+<?php
+$error = $_SESSION["message"];
+
+
+ ?>
+
+
+
 <html>
     <head>
 
@@ -24,8 +32,11 @@
       </div>
      </div>
     </div>
-    </body>
-</html>
+
+     <div id='alert'><div class=' alert alert-block alert-info fade in center'>$error</div></div>
+
+
+
 
 <div id="uploadimageModal" class="modal" role="dialog">
  <div class="modal-dialog">

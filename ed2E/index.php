@@ -2,11 +2,12 @@
 <html lang="en" dir="ltr">
 
   <?php include 'assets/php_files/head.php' ?>
+  <link rel="stylesheet" href="assets/php_files/login/login.css">
 <body>
   <?php include 'assets/php_files/nav.php' ?>
   <?php include 'assets/php_files/db_fns.php';
-$database = new MySQLDatabase();
-$handle = $database -> connect("root","","ed2E");
+
+$handle = connect_db();
 ?>
 
 
@@ -37,9 +38,12 @@ $handle = $database -> connect("root","","ed2E");
 
   <div class="contaiern-fluid my-auto" id="purpose">
     <div class="content-2 text-center">
-      <h1 class="pt-5">OUR PURPOSE </h1>
+      <h1 class="pt-5">Our Service </h1>
 
-      <h1 class="ab ml-4 font-weight-light">ALL ABOUT YOU</h1>
+
+    </div>
+    <div class="content-2 text-center">
+      <h2 class="pt-5">OUR PURPOSE ALL ABOUT YOU</h2>
     </div>
     <div class="detail row mt-5">
 
@@ -47,17 +51,15 @@ $handle = $database -> connect("root","","ed2E");
 
       </div>
 
-      <div class="col-2">
-        <div class="square2"></div>
-        <img src="assets/img/mentor.jpg" class="h-75" alt="">
+      <div class="col-3 col-lg-3 col-sm-2 mr-5">
+        <div class="square2 d-sm-none d-md-block"></div>
+        <img src="assets/img/mentor.jpg" class="img-fluid" alt="">
 
       </div>
 
-      <div class="col-3">
 
-      </div>
 
-      <div class="col-3" style="">
+      <div class="col-3 col-lg-3 col-sm-6 ml-5" style="">
 
 
         <p>ED2E Institute's mission is to provide individuals with the information they need and access to resources, to meet and exceed their education-to-employment goals. Starting with students in Year 4 through early career professionals, we seek to
@@ -76,13 +78,17 @@ $handle = $database -> connect("root","","ed2E");
 
   </div>
 
+<div class="" id='toolcards'>
+
+</div>
 
   <div class="contaiern-fluid my-5  " id="Program">
     <div class="text-center">
-      <h1> ed2E COMPASS Program</h1>
+      <h2 > Leadership development</h2>
+      <?php include 'assets/toolcards/toolcard.php' ?>
 
     </div>
-    <div class="" style="">
+    <!-- <div class="" style="">
       <p>The ed2E COMPASS Program is a leadership development program catering to the pre-university, university, graduate and early career professionals with a singular mission to enable them to develop and exemplify the best agile toolkit to meet and exceed
         their education to employment goals.
       </p>
@@ -91,20 +97,20 @@ $handle = $database -> connect("root","","ed2E");
         networking opportunities will expose you to senior leaders from the private and public sectors. Each Program participant is assigned to a dedicated Program Counselor throughout their ed2E COMPASS journey.</p>
 
       <p>By the time the ed2E COMPASS Program members complete the one or multi-year program, they are expected to be fully equipped with an agile toolkit to accomplish distinguished and differentiated careers.</p>
-    </div>
-    <div class="row ">
-      <div class="col-6 mx-auto">
-        <button class="btn btn-2 btn-2a"style="margin-left:200px;"  id="overview">Overview</button>
+    </div> -->
+    <!-- <div class="row ">
+      <div class="col-6 col-sm-12 col-lg-6 mx-auto">
 
+        <button type="button" class="btn btn-outline-dark" style="margin-left:200px;"  id="overview">Overview</button>
 
+        <button type="button" class="btn btn-outline-dark" style="margin-left:200px;"  id="toolkit">Toolkit</button>
 
-        <button class="btn btn-2 btn-2a" style="margin-left:200px;" id="toolkit">Toolkit</button>
 
 
       </div>
 
 
-    </div>
+    </div> -->
 
 
 
@@ -190,6 +196,14 @@ $handle = $database -> connect("root","","ed2E");
                 <div class="stat">100 People</div>
 
               </div>
+
+
+              <div class="text-center" id="more" style="display:none">
+                    Click to See more
+              </div>
+
+
+
 
 
 
@@ -394,7 +408,8 @@ $handle = $database -> connect("root","","ed2E");
       </div>
 
       <div class="row-2 mx-auto">
-        <button class="btn btn-2 btn-2c mt-5" id="close">Close</button>
+        <!-- <button class="btn btn-2 btn-2c mt-5" id="close">Close</button> -->
+        <button class="btn btn-outline-dark" id="close">Close</button>
       </div>
 
 
@@ -484,6 +499,7 @@ $handle = $database -> connect("root","","ed2E");
 
 
         <div class="wrapper" id="card6">
+          <a href="assets/php_files/assessment/interview.php">
           <div class="clash-card barbarian" style="height:350px;">
             <div class="clash-card__unit-name mt-2">INTERVIEW SKILLS TRAINING</div>
             <div class="clash-card__unit-description">
@@ -493,20 +509,21 @@ $handle = $database -> connect("root","","ed2E");
 
 
             <div class="clash-card__unit-description">
-              ‘Selling Yourself’
+              Selling Yourself
             </div>
 
             <div class="clash-card__unit-description">
-              ‘Exploring Personal Values’
+              Exploring Personal Values
             </div>
             <div class="clash-card__unit-description">
-              ‘Researching a New Market’
+              Researching a New Market
             </div>
 
 
 
 
           </div>
+        </a>
         </div>
         <!-- end wrapper -->
       </div>
@@ -516,16 +533,56 @@ $handle = $database -> connect("root","","ed2E");
 
       <div class="row-2 mx-auto">
 
-        <button class="btn btn-2 btn-2c mt-5" id="close2">Close</button>
+        <button class="btn btn-outline-dark mt-5" id="close2">Close</button>
       </div>
 
     </div>
 
 
   </div>
-
   <div class="contaiern-fluid my-auto" id="Career">
-    <h1 class="text-center py-5">Explore Your Career</h1>
+    <h1 class="text-center pt-5">Join Us Now</h1>
+    <div class="row mt-5 text-center" id="Jobs">
+
+
+      <div class="col-12" id="job2">
+
+        <div id="login-box">
+          <div class="left">
+            <h5>Sign up Email</h5>
+
+            <input id="gname" type="text" name="firstname" placeholder="First Name" />
+            <input id="fname" type="text" name="lastname" placeholder="Last Name" />
+            <input id="email" type="text" name="email" placeholder="E-mail" />
+            <input id="password" type="password" name="password" placeholder="Password" />
+
+
+            <input type="submit" name="signup_submit" value="Sign me up" onclick="signup_email()"/>
+
+          </div>
+
+          <div class="right text-center">
+            <h5 class="text-light" style="font-family: 'Roboto', sans-serif;">Sign up with Linkedin</h5>
+
+
+            <button class="social-signin twitter mt-5" style="margin-top:40px;" onclick="signup_via_linkin()"> <i class="fab fa-linkedin-in" style="padding-right:20px;"></i> Sign up with Linkedin</button>
+
+          </div>
+
+
+          <div class="or"> <div class="line">
+          </div>OR </div>
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+  </div>
+  <!-- <div class="contaiern-fluid my-auto" id="Career">
+    <h1 class="text-center py-5">Join Us Now</h1>
     <div class="row mt-5 text-center" id="Jobs">
 
       <div class="col-2">
@@ -569,24 +626,28 @@ $handle = $database -> connect("root","","ed2E");
 
       </div>
       <div class="col-2" id="job5">
-        <!-- <img src="assets/img/search.png" class="w-50" alt="">
+         <img src="assets/img/search.png" class="w-50" alt="">
 
         <div class="mt-3" >
           Explore
         </div> -->
 
-      </div>
+      <!-- </div>
 
     </div>
 
-    <!-- <div class="col-12 text-center pt-5" id="search">
-      <!-- <a class="nav-link" href="#" id="addClass">fff<i class="fa fa-search"></i></span></a> -->
+     <div class="col-12 text-center pt-5" id="search2">
 
-    <!-- <input type="text" name="name" size="12" placeholder="Explore Your Career">
-    </div> -->
+<form class="" action="http://www.ausstats.abs.gov.au/ausstats/searchclass.nsf/(Searchattmnt)?openagent" method="post">
+  <input type="text" name="name" size="12" placeholder="Explore Your Career">
 
+</form>
 
-  </div>
+</div> -->
+
+  <!-- </div> -->
+
+  <?php include 'assets/php_files/footer.php' ?>
 
 
 
@@ -596,7 +657,7 @@ $handle = $database -> connect("root","","ed2E");
 
       <div id="result" class="">
 
-        <?php
+              <?php
                     $jobs = new Content();
                     $jobs -> echodata($handle,"topjobs",'Jobname','Salary','Skill','id','score');
                     ?>
@@ -619,6 +680,59 @@ $handle = $database -> connect("root","","ed2E");
 
     </div>
 
+  </div>
+
+  <!--  footer-->
+
+  <div class=" bg-dark">
+    <div class=" text-center" style="height:200px;">
+          <div class="row  text-center" id="Jobs">
+            <div class="col-3">
+            </div>
+            <div class="col-2 mt-5" id="job1">
+              <a href="https://www.facebook.com/ed2EInstitute/">
+              <img src="assets/img/fb.png" id="addClass" class="w-25" alt=""></a>
+              <div class="mt-3  text-light">
+                  <?php include 'facebook/index.php' ?>
+              </div>
+
+            </div>
+            <div class="col-2 mt-5" id="job2">
+              <img src="assets/img/twitter.png" id="addClass2" class="w-25" alt="">
+
+              <div class="mt-3 text-light">
+                38
+              </div>
+
+            </div>
+
+
+
+            <div class="col-2 mt-5" id="job3">
+              <img src="assets/img/linkedin.png" class="w-25" alt="">
+
+              <div class="mt-3 text-light">
+                15
+              </div>
+
+            </div>
+
+            <div class="col-2 mt-5" id="job4">
+
+
+            </div>
+            <div class="col-2" id="job5">
+
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+  </div>
+<!-- footer end -->
 
 
 
@@ -629,6 +743,33 @@ $handle = $database -> connect("root","","ed2E");
 
 </html>
 <script type="text/javascript">
+    function signup_email() {
+        var email = document.getElementById("email").value;
+        var fname = document.getElementById("fname").value;
+        var gname = document.getElementById("gname").value;
+        var password = document.getElementById("password").value;
+        $.post("/assets/php_files/login/signup_function.php",
+            {
+                task: "signup",
+                method: "email",
+                email: email,
+                fname: fname,
+                gname: gname,
+                password: password
+            },
+            function(data, status){
+                console.log(data);
+                if(data == "success") {
+                    window.location.href='/assets/php_files/signup/signup.php';
+                } else {
+                    alert(data);
+                }
+                // alert("Data: " + data + "\nStatus: " + status);
+            });
+
+    }
+
+
   $(function() {
     $("#addClass").click(function() {
       $('#qnimate').addClass('popup-box-on');

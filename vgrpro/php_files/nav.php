@@ -35,6 +35,7 @@
          </div>
 
  <script type="text/javascript">
+
  $(function(){
  $("#addClass").click(function () {
          $('#qnimate').addClass('popup-box-on');
@@ -44,6 +45,13 @@
          $('#qnimate').removeClass('popup-box-on');
            });
  });
+
+
+
+
+
+
+
  $(document).ready(function(){
 
   load_data();

@@ -14,10 +14,10 @@
   <link rel="stylesheet" href="../assets/css/styles.css">
   <link rel="stylesheet" href="../assets/css/dh-row-titile-text-image-right-1.css">
   <link rel="stylesheet" href="../assets/css/Video-Parallax-Background.css">
-  <link rel="stylesheet" type="text/css" href=".。/assets/index_files/lato.css">
-  <link rel="stylesheet" type="text/css" href="./assets/index_files/fontawesome.css">
-  <link rel="stylesheet" type="text/css" href="./assets/index_files/animate.css">
-  <link rel="stylesheet" type="text/css" href="./assets/index_files/flavr.css">
+  <link rel="stylesheet" type="text/css" href="../assets/index_files/lato.css">
+  <link rel="stylesheet" type="text/css" href="../assets/index_files/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="../assets/index_files/animate.css">
+  <link rel="stylesheet" type="text/css" href="../assets/index_files/flavr.css">
   <link rel="stylesheet" type="text/css" href="assets/css/component.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/demo.css" />

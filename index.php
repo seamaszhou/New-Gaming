@@ -127,53 +127,7 @@
 
 
 
-<!--    <?php $sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary,image FROM news WHERE NewsID = 1";
-    $result = $handle->query($sql); ?>
 
-    <?php if($result -> num_rows > 0){
-    while($row = $result -> fetch_assoc()){?>
-
-    <div style="background-size:contain;background-repeat:no-repeat;height:550px;">
-        <h1 class="text-center" style="font-weight:bold;">News</h1>
-        <div class="card-group" style="padding:0;padding-top:30px;padding-right:300px;padding-left:300px;">
-            <div class="card"><img class="card-img-top w-50 d-block" src="<?php echo$row["image"] ?>">
-                <div class="card-body">
-
-                    <h4 class="card-title"><?php
-                  		echo $row["NewsTitle"];
-
-                   ?></h4>
-                    <p class="card-text"><?php echo $row["Summary"];
-                  }} ?></p><button class="btn btn-info" type="button">Check More</button></div>
-            </div>
-
-            <?php $sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary FROM news WHERE NewsID = 2";
-            $result = $handle->query($sql); ?>
-            <div class="card"><img class="card-img-top w-100 d-block">
-                <div class="card-body">
-                    <h4 class="card-title"><?php if($result -> num_rows > 0){
-                  	while($row = $result -> fetch_assoc()){
-                  		echo $row["NewsTitle"];
-
-                   ?></h4>
-                    <p class="card-text"><?php echo $row["Summary"];
-                  }} ?></p><button class="btn btn-info" type="button">Check More</button></div>
-            </div>
-
-            <?php $sql = "SELECT NewsID, NewsTitle, NewsDesc, Summary FROM news WHERE NewsID = 3";
-            $result = $handle->query($sql); ?>
-            <div class="card"><img class="card-img-top w-100 d-block">
-                <div class="card-body">
-                    <h4 class="card-title"><?php if($result -> num_rows > 0){
-                  	while($row = $result -> fetch_assoc()){
-                  		echo $row["NewsTitle"];
-
-                   ?></h4>
-                    <p class="card-text"><?php echo $row["Summary"];
-                  }} ?></p><button class="btn btn-info" type="button">Check More</button></div>
-            </div>
-        </div>
-    </div>-->
 
     <div style="background-size:contain;background-repeat:no-repeat;height:750px;">
 
@@ -207,7 +161,7 @@
             </figcaption>
 
 
-              <a href="news/1.php"></a>
+              <a href="News/1.php"></a>
           </figure>
 
           <?php
@@ -237,11 +191,8 @@
               </p>
             </figcaption>
 
-                <div class="demo-actions" id="video1">
-                  <a href="#" class="btn btn-default btn-show"></a>
 
-
-            </div>
+            <a href="News/2.php"></a>
           </figure>
 
           <?php
@@ -271,11 +222,8 @@
               </p>
             </figcaption>
 
-                <div class="demo-actions" id="video1">
-                  <a href="#" class="btn btn-default btn-show"></a>
 
-
-            </div>
+            <a href="News/3.php"></a>
           </figure>
         </div>
     </div>
@@ -317,7 +265,7 @@
                             buttons     : {
                                 close   : {},
                                 checkmore :{action: function(){
-                                    location.href = "games/1.php";
+                                    location.href = "Games/1.php";
                                 }}
                             }
                         });
@@ -334,7 +282,7 @@
                             buttons     : {
                                 close   : {},
                                 checkmore :{action: function(){
-                                    location.href = "games/2.php";
+                                    location.href = "Games/2.php";
                                 }}
                             }
                         });
@@ -351,7 +299,7 @@
                             buttons     : {
                                 close   : {},
                                 checkmore :{action: function(){
-                                    location.href = "games/3.php";
+                                    location.href = "Games/3.php";
                                 }}
                             }
                         });

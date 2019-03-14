@@ -34,27 +34,14 @@
                   <h1 style="color:#e74c3c"><?php echo$row["Name"] ?></h1>
                   <h4 style="color:#95a5a6"><?php echo$row["Console"] ?> </h4>
                 <h6 style="color:#34495e">  Release Date:<?php echo$row["Day"] ?> May</h6>
-                  <p style="color:#34495e"><br><?php echo$row["Description"] ?></p><p class="font-weight-bold" style="font-size:50px;">$<?php echo$row["Price"] ?></p> </div>
+                  <p style="color:#34495e"><br><?php echo$row["Description"] ?></p><p class="font-weight-bold" style="font-size:50px;">$<?php echo$row["Price"] ?></p> </div>  <?php } ?>
 
             </div>
         </div>
     </div>
-    <div class="container-fluid" id="dqv">
-        <h1></h1>
-        <div class="row">
-            <div class="col-sm-8 col-md-7 col-lg-6 mx-auto">
-
-                <div class="row">
-                  <div class="embed-responsive embed-responsive-16by9">
-<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kaD9eZinNXo"></iframe>
-</div>
-                    <div class="col-sm-5 col-md-6 col-lg-6 controls"><input type="range" value="0" id="progress-bar" class="dqv-range prog"></div>
-                    <div class="col-md-12"><select class="form-control-sm d-none" id="speed"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select></div>
-                </div>
-            </div>
-        </div>
-      <?php } ?>
-    </div>
+    <?php
+    $playlist_id =  'PLvGblRCkbOKXpowYjYGLN9rLvvDzqRyvy';
+    include'../youtube/playlist.php' ?>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/-Filterable-Cards-.js"></script>

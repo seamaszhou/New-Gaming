@@ -6,12 +6,12 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
-  
+
  </head>
  <body>
   <div class="container">
    <br />
-   <h2 align="center">Ajax Live Data Search using Jquery PHP MySql</h2><br />
+   
    <div class="form-group">
     <div class="input-group">
      <span class="input-group-addon">Search</span>

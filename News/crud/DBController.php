@@ -1,8 +1,8 @@
 <?php
 class DBController {
-	private $host = "localhost";
-	private $user = "root";
-	private $password = "";
+	private $host = "ls-ecb0362e864832106d732c53f28b83115238c11d.crywkgjesajq.ap-southeast-2.rds.amazonaws.com";
+	private $user = "dbmasteruser";
+	private $password = "4s-qJnSwkzzAw[7{-,T-{`Xj%0y-)3(n";
 	private $database = "ezweb";
 
 	private  $conn;

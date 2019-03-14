@@ -46,7 +46,7 @@ $result = $handle->query($sql);
 ?>
 
     </div><small class="mt-auto" style="margin-top:200px;"></small>
-  <img src="SONY.jpg" class=" mx-auto d-block " alt="">
+  <img src="SONY.jpg" class=" mx-auto d-block" alt="">
     <h1 class="text-center ml-auto" style="margin-top:100px;">
 
       <?php if($result -> num_rows > 0){

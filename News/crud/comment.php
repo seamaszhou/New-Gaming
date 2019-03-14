@@ -1,8 +1,8 @@
 <style>
 
 .message-box{margin-bottom:20px;border-top:#F0F0F0 2px solid;background:#FAF8F8;padding:10px;margin:auto;}
-.btnEditAction{background-color:#2FC332;border:0;padding:2px 10px;color:#FFF;}
-.btnDeleteAction{background-color:#D60202;border:0;padding:2px 10px;color:#FFF;margin-bottom:15px;}
+.btnEditAction{background-color:#3498db;border:0;padding:2px 10px;color:#FFF;}
+.btnDeleteAction{background-color:#34495e;border:0;padding:2px 10px;color:#FFF;margin-bottom:15px;}
 #btnAddAction{background-color:#09F;border:0;padding:5px 10px;color:#FFF;}
 </style>
 <?php
@@ -81,8 +81,14 @@ foreach($comments as $k=>$v) {
 } ?>
 </div>
 
+
+
+
+
+
 <div id="frmAdd"><textarea name="txtmessage" id="txtmessage" cols="140" rows="5"></textarea>
 <p><button id="btnAddAction" name="submit" onClick="callCrudAction('add','')">Add</button></p>
+
 </div>
 <img src="LoaderIcon.gif" id="loaderIcon" style="display:none" />
 </div>

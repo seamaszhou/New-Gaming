@@ -14,8 +14,6 @@ body{ font-family: sans-serif;}
 
 .grey{ background-color:#DDDDDD !important;}
 .light_sky{ background-color:#B9FFFF !important;}
-
-/*========== Hover Popup ===============*/
 .date_cell { cursor: pointer; cursor: hand; }
 .date_cell:hover { background: #DDDDDD !important; }
 .date_popup_wrap {

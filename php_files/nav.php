@@ -11,7 +11,7 @@
                 <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="game.php">Games&nbsp;</a>
                     <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="game.php">Games</a><a class="dropdown-item" role="presentation" href="news.php">News</a><a class="dropdown-item" role="presentation" href="#"></a></div>
                 </li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="collection.php">Collection</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="Calendar/index.php">Calendar</a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="./login/profile.php"><i class="fa fa-user"></i></a></li>
                 <li class="nav-item" role="presentation">
                   <a class="nav-link" href="#" id="addClass"><i class="fa fa-search"></i></span></a>
@@ -27,7 +27,7 @@
          <div id="qnimate" class="off">
              <div id="search" class="open">
              <button data-widget="remove" id="removeClass" class="close" type="button">×</button>
-             <form action="http://bootsnipp.com/user/snippets/508jR" method="" autocomplete="off">
+             <form action="" method="" autocomplete="off">
                      <input type="text" placeholder="Type search keywords here" value="" name="term" id="search_text">
              </form>
              <div id="result"></div>
@@ -35,6 +35,7 @@
          </div>
 
  <script type="text/javascript">
+
  $(function(){
  $("#addClass").click(function () {
          $('#qnimate').addClass('popup-box-on');
@@ -44,6 +45,13 @@
          $('#qnimate').removeClass('popup-box-on');
            });
  });
+
+
+
+
+
+
+
  $(document).ready(function(){
 
   load_data();
